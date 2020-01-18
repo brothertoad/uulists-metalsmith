@@ -1,0 +1,28 @@
+{% macro linkblock(links) %}
+  <div class="list-header">{{ links.label }}</div>
+  <div class="list-container">
+    {% for entry in links.links %}
+      {% if entry.label !== '' and entry.url !== '' %}
+        <div><a class="embedded-link" href="{{ entry.url }}">{{ entry.label }}</a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro barelinkblock(links) %}
+  <div class="list-container">
+    {% for entry in links.links %}
+      {% if entry.label !== '' and entry.url !== '' %}
+        <div><a class="embedded-link" href="{{ entry.url }}">{{ entry.label }}</a></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro stringblock(strings) %}
+  <div class="list-container">
+    {% for s in strings %}
+        <span class="centered-block">{{ s }}</span>
+    {% endfor %}
+  </div>
+{% endmacro %}

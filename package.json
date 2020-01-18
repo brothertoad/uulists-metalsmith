@@ -1,0 +1,21 @@
+{
+  "name": "uulists",
+  "version": "1.0.0",
+  "description": "Lists derived from uncle uncool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jstransformer-nunjucks": "^1.0.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-data-loader": "^1.1.4",
+    "metalsmith-in-place": "^4.4.1",
+    "metalsmith-layouts": "^2.3.1",
+    "metalsmith-sass": "^1.7.0",
+    "metalsmith-static": "0.0.5"
+  }
+}

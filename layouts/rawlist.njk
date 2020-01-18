@@ -1,0 +1,13 @@
+{% extends "layout.njk" %}
+
+{% block body %}
+<div class="tc">
+  <p class="bold">
+    Nothing in this list is for sale.
+  </p>
+</div>
+
+<div class="pre-line">
+  {{ fs.readFileSync('lists/' + fileName) }}
+</div>
+{% endblock %}

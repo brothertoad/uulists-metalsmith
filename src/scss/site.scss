@@ -1,0 +1,266 @@
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+@mixin link-color {
+  // The color below is from number 4 on https://visme.co/blog/website-color-schemes/
+  color: #EDF5E1;
+}
+
+@media print {
+   .noprint {
+      visibility: hidden;
+   }
+}
+
+body {
+  font-family: 'Noto Sans', 'Open Sans', Arial, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*
+  // The color below is from number 4 on https://visme.co/blog/website-color-schemes/
+  */
+  background: #05386B;
+  @include link-color;
+}
+
+@mixin centered {
+  text-align: center;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tc {
+  @include centered;
+}
+
+h1 {
+  @include centered;
+}
+
+.left-inline {
+  display: inline;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.right-inline {
+  display: inline;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.w-80 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recipe {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.full-size-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.form-row-container {
+  flex: 1 1 0;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  flex: 3 1 0;
+}
+
+.form-row input {
+  flex: 7 1 0;
+}
+
+.weight-block {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.weight-table {
+  align: center;
+  margin: 0 auto;
+  border-spacing: 3px;
+}
+
+.weight-table td, .weight-table th {
+  padding: 3px;
+}
+
+// Styles for music lib page
+
+$music-lib-button-container-vertical-margin: 20px;
+$music-lib-link-vertical-margin: 10px;
+
+@mixin music-lib-vertical-spacing {
+  margin-top: $music-lib-button-container-vertical-margin;
+  margin-bottom: $music-lib-button-container-vertical-margin;
+}
+
+@mixin music-lib-link-vertical-spacing {
+  margin-top: $music-lib-link-vertical-margin;
+  margin-bottom: $music-lib-link-vertical-margin;
+}
+
+.music-lib-state-button-container {
+  margin-left: 20%;
+  margin-right: 20%;
+  @include music-lib-vertical-spacing;
+}
+
+.music-lib-return-container {
+  @include music-lib-link-vertical-spacing;
+}
+
+.artist-banner, .album-banner {
+  font-size: 1.5rem;
+  @include music-lib-vertical-spacing;
+}
+
+.song-container {
+  width: auto;
+}
+
+.song-table {
+  width: auto;
+  margin: 0 auto;
+}
+
+$song-cell-horizontal-padding: 5px;
+
+.song-cell {
+  padding-left: $song-cell-horizontal-padding;
+  padding-right: $song-cell-horizontal-padding;
+}
+
+.song-button {
+  margin-left: $song-cell-horizontal-padding;
+  margin-right: $song-cell-horizontal-padding;
+}
+
+.song-controls {
+  width: 40%;
+  margin: 0 auto;
+}
+
+tr.new-album-row > td {
+  padding-top: 1em;
+}
+
+// Generic classes
+
+.row-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.column-30 {
+  flex: 0 0 30%;
+}
+
+.column-70 {
+  flex: 0 0 70%;
+}
+
+.column {
+  @include centered;
+  flex: 1 1 0;
+}
+
+.left-column {
+  flex: 1 1 0;
+}
+
+.row-parent-space-between {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.list-header {
+  @include centered;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.list-container {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.centered-block {
+  display: block;
+  @include centered;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  transition: color .15s ease-in;
+  @include centered;
+  /* font-weight: 600; */
+  @include link-color;
+}
+
+.link2 {
+  /* display: block; */
+  text-decoration: none;
+  transition: color .15s ease-in;
+  @include centered;
+  /* font-weight: 600; */
+}
+
+.embedded-link {
+  text-decoration: none;
+  transition: color .15s ease-in;
+  @include link-color;
+}
+
+.link:hover, .embedded-link:hover {
+    text-decoration: underline;
+}
+
+.link:focus, .embedded-link:focus {
+    text-decoration: underline;
+}
+.link:link, .link:visited, .embedded-link:link, .embedded-link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:active, .embedded-link:active {
+    transition: color .15s ease-in;
+}
