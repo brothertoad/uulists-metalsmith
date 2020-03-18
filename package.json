@@ -16,6 +16,8 @@
     "metalsmith-in-place": "^4.4.1",
     "metalsmith-layouts": "^2.3.1",
     "metalsmith-sass": "^1.7.0",
-    "metalsmith-static": "0.0.5"
+    "metalsmith-static": "0.0.5",
+    "acorn": ">=5.7.4",
+    "minimist": ">=1.2.2"
   }
 }
