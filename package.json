@@ -9,15 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "acorn": "^7.3.1",
+    "acorn": "^7.4.1",
     "fs": "0.0.1-security",
     "jstransformer-nunjucks": "^1.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-data-loader": "^1.1.5",
-    "metalsmith-in-place": "^4.4.1",
+    "metalsmith-in-place": "^4.4.2",
     "metalsmith-layouts": "^2.3.1",
     "metalsmith-sass": "^1.7.0",
     "metalsmith-static": "0.0.5",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.2",
+    "yargs-parser": "^20.2.7"
   }
 }
