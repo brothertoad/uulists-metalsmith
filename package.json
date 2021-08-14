@@ -26,6 +26,7 @@
   },
   "resolutions": {
     "tar": "^6.1.8",
-    "trim-newlines": "^4.0.2"
+    "trim-newlines": "^4.0.2",
+    "debug": "^4.3.2"
   }
 }
