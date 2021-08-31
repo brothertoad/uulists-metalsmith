@@ -19,7 +19,8 @@
     "metalsmith-sass": "^1.7.0",
     "metalsmith-static": "0.0.5",
     "minimist": ">=1.2.5",
-    "yargs-parser": "^20.2.9"
+    "yargs-parser": "^20.2.9",
+    "trim-newlines": "^4.0.2"
   },
   "devDependencies": {
     "tar": "^6.1.9"
