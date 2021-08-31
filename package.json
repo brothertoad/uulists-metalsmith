@@ -22,7 +22,7 @@
     "yargs-parser": "^20.2.9"
   },
   "devDependencies": {
-    "tar": "^6.1.8"
+    "tar": "^6.1.9"
   },
   "resolutions": {
     "tar": "^6.1.8",
